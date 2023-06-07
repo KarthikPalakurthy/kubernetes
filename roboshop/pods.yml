@@ -41,8 +41,8 @@ spec:
     component: catalogue
   ports:
     - protocol : TCP
-      port: 80
-      targetPort: 80
+      port: 8080
+      targetPort: 8080
 ---
 apiVersion: v1
 kind: Pod
@@ -64,8 +64,8 @@ spec:
     component: cart
   ports:
     - protocol : TCP
-      port: 80
-      targetPort: 80
+      port: 8080
+      targetPort: 8080
 ---
 apiVersion: v1
 kind: Pod
@@ -87,8 +87,8 @@ spec:
     component: user
   ports:
     - protocol : TCP
-      port: 80
-      targetPort: 80
+      port: 8080
+      targetPort: 8080
 ---
 apiVersion: v1
 kind: Pod
@@ -110,8 +110,8 @@ spec:
     component: shipping
   ports:
     - protocol : TCP
-      port: 80
-      targetPort: 80
+      port: 8080
+      targetPort: 8080
 ---
 apiVersion: v1
 kind: Pod
@@ -133,6 +133,6 @@ spec:
     component: payment
   ports:
     - protocol : TCP
-      port: 80
-      targetPort: 80
+      port: 8080
+      targetPort: 8080
 ---
