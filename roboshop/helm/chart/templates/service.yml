@@ -8,5 +8,5 @@ spec:
     component: {{.Values.component}}
   ports:
     - protocol : TCP
-      port: 80
-      targetPort: 80
+      port: {{.Values.port}}
+      targetPort: {{.Values.port}}

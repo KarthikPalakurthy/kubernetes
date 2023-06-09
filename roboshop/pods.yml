@@ -25,21 +25,21 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: catalogue
+  name: catalogue.yml
   labels:
-    component: catalogue
+    component: catalogue.yml
 spec:
   containers:
-    - name : catalogue
-      image: rkalluru/catalogue
+    - name : catalogue.yml
+      image: rkalluru/catalogue.yml
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: catalogue-roboshop
+  name: catalogue.yml-roboshop
 spec:
   selector:
-    component: catalogue
+    component: catalogue.yml
   ports:
     - protocol : TCP
       port: 8080
