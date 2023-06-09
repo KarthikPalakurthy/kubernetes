@@ -1,13 +1,13 @@
-#apiVersion: apps/v1
-#kind: Pod
-#metadata:
-#  name: frontend
-#  labels:
-#    component: frontend
-#spec:
-#  containers:
-#    - name : frontend
-#      image: rkalluru/frontend
+apiVersion: apps/v1
+kind: Pod
+metadata:
+  name: frontend
+  labels:
+    component: frontend
+spec:
+  containers:
+    - name : frontend
+      image: rkalluru/frontend
 ---
 apiVersion: apps/v1
 kind: Deployment
