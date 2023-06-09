@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: { { .Values.component } }
+  name: {{.Values.component}}
   labels:
-    component: { { .Values.component } }
+    component: {{.Values.component}}
 spec:
   # modify replicas according to your case
   replicas: 4
   selector:
     matchLabels:
-      component: { { .Values.component } }
+      component: {{.Values.component}}
   template:
     metadata:
       labels:
-        component: { { .Values.component } }
+        component: {{.Values.component}}
     spec:
       containers:
-        - name: { { .Values.component } }
-          image: rkalluru/{ { .Values.component } }
+        - name: {{.Values.component}}
+          image: rkalluru/{{.Values.component}}
 ---
