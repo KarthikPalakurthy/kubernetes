@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: { { .Variable.component } }-roboshop
+spec:
+  type: NodePort
+  selector:
+    component: { { .Variable.component } }
+  ports:
+    - protocol : TCP
+      port: 80
+      targetPort: 80

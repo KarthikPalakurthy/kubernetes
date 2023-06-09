@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: { { .Variable.component } }
+  labels:
+    component: { { .Variable.component } }
+spec:
+  # modify replicas according to your case
+  replicas: 4
+  selector:
+    matchLabels:
+      component: { { .Variable.component } }
+  template:
+    metadata:
+      labels:
+        component: { { .Variable.component } }
+    spec:
+      containers:
+        - name: { { .Variable.component } }
+          image: rkalluru/{ { .Variable.component } }
