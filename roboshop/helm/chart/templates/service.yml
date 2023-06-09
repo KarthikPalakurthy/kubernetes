@@ -3,7 +3,6 @@ kind: Service
 metadata:
   name: {{.Values.component}}-roboshop
 spec:
-  type: NodePort
   selector:
     component: {{.Values.component}}
   ports:
